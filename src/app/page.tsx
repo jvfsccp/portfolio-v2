@@ -1,5 +1,6 @@
 import { SiteFooter } from '@/components/layout/site-footer'
 import { SiteHeader } from '@/components/layout/site-header'
+import { PortfolioExperience } from '@/components/sections/portfolio-experience'
 import { PortfolioHero } from '@/components/sections/portfolio-hero'
 
 const placeholderSections = [
@@ -37,13 +38,17 @@ export default function HomePage() {
       <main className="pb-8 pt-12">
         <PortfolioHero />
 
-        {placeholderSections.map((section) => (
-          <PlaceholderSection
-            key={section.id}
-            id={section.id}
-            title={section.title}
-          />
-        ))}
+        <PortfolioExperience />
+
+        {placeholderSections
+          .filter((section) => section.id !== 'experiencia')
+          .map((section) => (
+            <PlaceholderSection
+              key={section.id}
+              id={section.id}
+              title={section.title}
+            />
+          ))}
       </main>
       <SiteFooter />
     </>
