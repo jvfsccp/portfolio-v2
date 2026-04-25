@@ -35,7 +35,7 @@ export type HeroContent = {
 
 export const heroContent: HeroContent = {
   greeting: 'Ola, me chamo',
-  name: 'Joao\nVictor',
+  name: 'João\nVictor',
   role: 'Desenvolvedor Full Stack',
   description:
     'Transformando ideias em soluções criativas e escaláveis. Especialista em criar sistemas e aplicações com React, Next.js, Node.js e Fastify. Focado em performance, interfaces modernas e integração com Inteligência Artificial.',
