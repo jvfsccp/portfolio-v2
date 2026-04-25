@@ -81,6 +81,18 @@
 - Preserve the semantic token naming from `cores.md` when building new UI.
 - Keep visual work aligned with the current monochromatic dark foundation unless a later design step explicitly changes it.
 
+## Superpowers Usage Policy
+
+- Use superpowers skills only when they add clear value, preferably for larger features or multi-step phases (for example: formal spec, implementation plan, complex review loops, or broad debugging).
+- For small iterations and straightforward edits, prefer direct execution with normal tools to reduce token usage.
+- Avoid invoking multiple superpowers skills for minor follow-up tweaks when one lightweight pass is enough.
+- Keep the workflow pragmatic: apply structured superpowers flow for high-impact work, keep simple tasks simple.
+
+## Workspace Policy
+
+- Do not use git worktrees for this repository.
+- Always implement directly in the main project workspace.
+
 ## Tooling State
 
 - `components.json` is configured with:
