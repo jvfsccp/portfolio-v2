@@ -64,9 +64,3 @@ src/
   data/         # Content/data files for portfolio sections
   lib/          # Shared utilities
 ```
-
-## Notes
-
-- Files and folders intentionally ignored from git:
-  - `cores.md`
-  - `images-inspirations/`
