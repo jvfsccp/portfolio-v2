@@ -2,6 +2,7 @@ import { SiteFooter } from '@/components/layout/site-footer'
 import { SiteHeader } from '@/components/layout/site-header'
 import { PortfolioExperience } from '@/components/sections/portfolio-experience'
 import { PortfolioHero } from '@/components/sections/portfolio-hero'
+import { PortfolioProjects } from '@/components/sections/portfolio-projects'
 
 const placeholderSections = [
   { id: 'experiencia', title: 'Experiencia' },
@@ -40,8 +41,13 @@ export default function HomePage() {
 
         <PortfolioExperience />
 
+        <PortfolioProjects />
+
         {placeholderSections
-          .filter((section) => section.id !== 'experiencia')
+          .filter(
+            (section) =>
+              section.id !== 'experiencia' && section.id !== 'projetos',
+          )
           .map((section) => (
             <PlaceholderSection
               key={section.id}
