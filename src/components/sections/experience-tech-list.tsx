@@ -38,16 +38,14 @@ export function ExperienceTechList({ technologies }: ExperienceTechListProps) {
         ))}
 
         {!isExpanded
-          ? technologies
-              .slice(MOBILE_VISIBLE_TECHS)
-              .map((technology) => (
-                <li
-                  key={`${technology}-desktop`}
-                  className="hidden rounded-full border border-border/80 bg-secondary/55 px-3 py-1.5 text-xs font-medium tracking-[0.01em] text-foreground-subtle md:list-item"
-                >
-                  {technology}
-                </li>
-              ))
+          ? technologies.slice(MOBILE_VISIBLE_TECHS).map((technology) => (
+              <li
+                key={`${technology}-desktop`}
+                className="hidden rounded-full border border-border/80 bg-secondary/55 px-3 py-1.5 text-xs font-medium tracking-[0.01em] text-foreground-subtle md:list-item"
+              >
+                {technology}
+              </li>
+            ))
           : null}
       </ul>
 

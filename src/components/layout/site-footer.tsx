@@ -125,8 +125,13 @@ export function SiteFooter() {
             target="_blank"
           >
             <FaWhatsapp aria-hidden="true" className="size-4.5" />
-            <span className="leading-5 sm:leading-none">{contactCta.label}</span>
-            <ArrowUpRight aria-hidden="true" className="hidden size-4 sm:block" />
+            <span className="leading-5 sm:leading-none">
+              {contactCta.label}
+            </span>
+            <ArrowUpRight
+              aria-hidden="true"
+              className="hidden size-4 sm:block"
+            />
           </a>
         </div>
       </Reveal>

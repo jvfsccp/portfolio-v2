@@ -1,8 +1,9 @@
 'use client'
 
 import { motion, useReducedMotion } from 'framer-motion'
-import type { CSSProperties, ReactNode } from 'react'
+import { type CSSProperties, type ReactNode, useEffect, useState } from 'react'
 
+import { getRevealRenderMode } from '@/components/motion/reveal-state'
 import { cn } from '@/lib/utils'
 
 type RevealProps = {
@@ -25,8 +26,18 @@ export function Reveal({
   y = 24,
 }: RevealProps) {
   const prefersReducedMotion = useReducedMotion()
+  const [isMounted, setIsMounted] = useState(false)
 
-  if (prefersReducedMotion) {
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  if (
+    getRevealRenderMode({
+      isMounted,
+      prefersReducedMotion: prefersReducedMotion ?? false,
+    }) === 'static'
+  ) {
     return (
       <div className={className} id={id} style={style}>
         {children}
