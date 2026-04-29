@@ -1,25 +1,22 @@
 # Joao Victor Portfolio
 
-Personal portfolio project built with Next.js App Router, React 19, TypeScript, and Tailwind CSS v4.
+Personal portfolio built with Next.js App Router, React 19, TypeScript, and Tailwind CSS v4.
 
-## Current Status
+## Status
 
-This repository is now in the portfolio sections phase.
+The portfolio is implemented and polished, including responsive behavior, motion details, real external links, contact section, and final footer.
 
-Implemented so far:
+## Highlights
 
-- Typography and base visual foundation
-- Semantic design tokens in `src/app/globals.css`
-- Root metadata and locale (`pt-BR`) in `src/app/layout.tsx`
-- Reusable layout components for header and footer
-- Hero section
-- Experience section
-- Projects section
-- Skills section with brand-colored technology badges
-- Education section with institution logos and timeline layout
-- `shadcn/ui` initialization with Base UI setup
-
-The next phase focuses on final polish, animations, and real project links.
+- Hero section with animated entrance, social links, CV download, and highlight card
+- Experience timeline with expandable company list and mobile tech list toggles
+- Projects showcase with external links
+- Skills section grouped by area with brand-colored badges
+- Education timeline with institution logos and responsive status badges
+- Contact section with cards, social links, and WhatsApp CTA
+- Final bottom footer with copyright, LinkedIn, and GitHub
+- Theme toggle with `next-themes`
+- Responsive refinements for mobile, tablet, and desktop
 
 ## Tech Stack
 
@@ -27,8 +24,9 @@ The next phase focuses on final polish, animations, and real project links.
 - React 19
 - TypeScript 5
 - Tailwind CSS v4
-- Biome (lint and formatting)
-- `shadcn/ui` (Base UI)
+- Framer Motion
+- Biome
+- `shadcn/ui` with Base UI
 
 ## Getting Started
 
@@ -53,27 +51,37 @@ Open `http://localhost:3000` in your browser.
 
 ## Available Scripts
 
-- `pnpm dev`: Start local development server
-- `pnpm build`: Create production build
-- `pnpm start`: Start production server
-- `pnpm lint`: Run Biome checks
-- `pnpm format`: Format project files with Biome
+- `pnpm dev`: start local development server
+- `pnpm build`: create production build
+- `pnpm start`: start production server
+- `pnpm lint`: run Biome checks
+- `pnpm format`: format project files with Biome
+- `pnpm exec tsc --noEmit`: run TypeScript type checking
 
 ## Project Structure
 
 ```text
 src/
   app/          # App Router entrypoints, layout, global styles
-  assets/       # Project static assets used by the app
-  components/   # UI and section components
-  data/         # Content/data files for portfolio sections
+  assets/       # Static assets used by the portfolio
+  components/   # Layout, UI, motion, providers, and section components
+  data/         # Portfolio content and structured section data
   lib/          # Shared utilities
 ```
 
-## Implemented Sections
+## Main Sections
 
-- `Inicio`: intro, CTA, and social links
-- `Experiencia`: professional timeline
-- `Projetos`: highlighted project cards
+- `Inicio`: intro, CTA, social links, and CV download
+- `Experiencia`: professional timeline with expandable details
+- `Projetos`: featured project cards and repository link
 - `Habilidades`: grouped tech stack by category
 - `Educacao`: academic background timeline
+- `Contato`: contact cards, social links, and WhatsApp CTA
+
+## Verification
+
+The project has been validated with:
+
+- `pnpm exec tsc --noEmit`
+- `pnpm build`
+- Playwright-based responsive checks on mobile, tablet, and desktop

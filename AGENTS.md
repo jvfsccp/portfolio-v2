@@ -3,7 +3,7 @@
 ## Project Context
 
 - Project: personal portfolio built with Next.js App Router, React 19, TypeScript, and Tailwind CSS v4.
-- Current phase: main portfolio sections are implemented. Remaining work is final polish, animations, and real destination links.
+- Current phase: portfolio is effectively complete and ready for maintenance updates, content refreshes, or future refinements.
 - Inspiration assets live in `images-inspirations/`.
 - Color naming rules are documented in `cores.md`.
 
@@ -33,6 +33,22 @@
   - projects section
   - skills section with grouped technology badges and brand colors
   - education section with institution logos and timeline layout
+- Added motion and interaction polish with `framer-motion`
+- Added theme switching with `next-themes`
+- Added a dedicated contact section with:
+  - contact cards
+  - social links
+  - WhatsApp CTA
+- Added a final bottom footer with:
+  - `JV` mark
+  - dynamic copyright year
+  - LinkedIn and GitHub links
+- Updated external links to open in a new tab where appropriate
+- Completed responsive refinements for mobile, tablet, and desktop, including:
+  - smaller mobile headings and body copy where needed
+  - responsive education status badges
+  - expandable mobile tech lists in experience cards
+  - improved mobile CTA layout in the contact section
 
 ## Current Design Tokens
 
@@ -65,6 +81,22 @@
 
 ### Base palette values
 
+Light mode:
+
+- `bg-surface`: `#f5f4ef`
+- `bg-surface-raised`: `#ffffff`
+- `bg-primary`: `#111111`
+- `bg-secondary`: `#ece8de`
+- `bg-muted`: `#e7e2d6`
+- `text-foreground`: `#111111`
+- `text-foreground-subtle`: `#3f3a33`
+- `text-muted-foreground`: `#756f68`
+- `border-border`: `#d9d2c5`
+- `border-input`: `#cfc7bb`
+- `ring-ring`: `#111111`
+
+Dark mode:
+
 - `bg-surface`: `#080808`
 - `bg-surface-raised`: `#0f0f0f`
 - `bg-primary`: `#fafafa`
@@ -84,8 +116,9 @@
 - Use `shadcn/ui` with Base UI, not Radix.
 - Use `lucide-react` for general icons.
 - Use `react-icons` for social media icons.
+- Use `framer-motion` for section and element reveal polish.
 - Preserve the semantic token naming from `cores.md` when building new UI.
-- Keep visual work aligned with the current dark foundation, while allowing restrained brand colors where a section already establishes them, such as skills badges.
+- Keep visual work aligned with the current light/dark token system, while allowing restrained brand colors where a section already establishes them, such as skills badges.
 
 ## Superpowers Usage Policy
 
@@ -112,7 +145,9 @@
   - `@base-ui/react`
   - `class-variance-authority`
   - `clsx`
+  - `framer-motion`
   - `lucide-react`
+  - `next-themes`
   - `react-icons`
   - `shadcn`
   - `tailwind-merge`
@@ -123,8 +158,11 @@
 - `src/app/layout.tsx`
 - `src/app/globals.css`
 - `src/app/page.tsx`
+- `src/components/layout/bottom-footer.tsx`
 - `src/components/layout/site-header.tsx`
 - `src/components/layout/site-footer.tsx`
+- `src/components/motion/reveal.tsx`
+- `src/components/providers/theme-provider.tsx`
 - `src/components/sections/portfolio-hero.tsx`
 - `src/components/sections/portfolio-experience.tsx`
 - `src/components/sections/portfolio-projects.tsx`
@@ -146,14 +184,15 @@
 - `pnpm exec tsc --noEmit`
 - `pnpm lint`
 - `pnpm build`
+- Playwright responsive validation on mobile, tablet, and desktop
 - Runtime smoke check in browser confirming:
   - Portuguese metadata
   - `pt-BR` document language
-  - dark tokenized foundation
+  - tokenized light/dark foundation
   - `Space Grotesk` on heading
   - `Inter` on body text
 
 ## Important Scope Note
 
-- The core portfolio sections are already live on the homepage.
-- The next implementation phase should focus on motion polish, real external/internal links, and final visual refinement.
+- The core portfolio experience is finished and deployed-ready.
+- Future work should be limited to content updates, additional projects, or optional design refinements.
