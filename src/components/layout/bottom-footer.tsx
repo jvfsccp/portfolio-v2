@@ -34,7 +34,7 @@ export function BottomFooter() {
             return (
               <a
                 key={social.label}
-                aria-label={`Abrir ${social.label} de Joao Victor`}
+                aria-label={`Abrir ${social.label} de João Victor`}
                 className="flex size-10 items-center justify-center rounded-full border border-border bg-surface-raised text-foreground-subtle transition-colors duration-200 hover:border-primary/20 hover:bg-secondary hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70"
                 href={social.href}
                 rel="noreferrer"

@@ -30,7 +30,7 @@ export type ContactCta = {
 export const contactSectionCopy: ContactSectionCopy = {
   title: 'Vamos conversar',
   intro:
-    'Estou disponivel para conversar sobre projetos, oportunidades e colaboracoes em desenvolvimento de software.',
+    'Estou disponível para conversar sobre projetos, oportunidades e colaborações em desenvolvimento de software.',
 }
 
 export const contactCards: readonly ContactCard[] = [
@@ -48,8 +48,8 @@ export const contactCards: readonly ContactCard[] = [
   },
   {
     icon: MapPin,
-    label: 'Localizacao',
-    value: 'Goiania - GO, Brasil',
+    label: 'Localização',
+    value: 'Goiânia - GO, Brasil',
   },
 ]
 

@@ -34,13 +34,13 @@ export type HeroContent = {
 }
 
 export const heroContent: HeroContent = {
-  greeting: 'Ola, me chamo',
+  greeting: 'Olá, me chamo',
   name: 'João\nVictor',
   role: 'Desenvolvedor Full Stack',
   description:
     'Transformando ideias em soluções criativas e escaláveis. Especialista em criar sistemas e aplicações com React, Next.js, Node.js e Fastify. Focado em performance, interfaces modernas e integração com Inteligência Artificial.',
   age: '21',
-  location: 'Goiania - GO, Brasil',
+  location: 'Goiânia - GO, Brasil',
 }
 
 export const heroPrimaryAction: HeroAction = {
@@ -55,19 +55,19 @@ export const heroSecondaryAction: HeroAction = {
 
 export const heroSocialLinks: readonly HeroSocialLink[] = [
   {
-    ariaLabel: 'Abrir GitHub de Joao Victor',
+    ariaLabel: 'Abrir GitHub de João Victor',
     href: 'https://github.com/jvfsccp',
     icon: FaGithub,
     label: 'GitHub',
   },
   {
-    ariaLabel: 'Abrir LinkedIn de Joao Victor',
+    ariaLabel: 'Abrir LinkedIn de João Victor',
     href: 'https://www.linkedin.com/in/joao-victor-fernandes-castro/',
     icon: FaLinkedinIn,
     label: 'LinkedIn',
   },
   {
-    ariaLabel: 'Abrir WhatsApp de Joao Victor',
+    ariaLabel: 'Abrir WhatsApp de João Victor',
     href: 'https://w.app/emrhso',
     icon: FaWhatsapp,
     label: 'WhatsApp',

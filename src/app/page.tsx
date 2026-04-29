@@ -8,7 +8,7 @@ import { PortfolioProjects } from '@/components/sections/portfolio-projects'
 import { PortfolioSkills } from '@/components/sections/portfolio-skills'
 
 const placeholderSections = [
-  { id: 'experiencia', title: 'Experiencia' },
+  { id: 'experiencia', title: 'Experiência' },
   { id: 'projetos', title: 'Projetos' },
   { id: 'habilidades', title: 'Habilidades' },
   { id: 'educacao', title: 'Educação' },
@@ -28,7 +28,7 @@ function PlaceholderSection({ id, title }: PlaceholderSectionProps) {
       <div className="mx-auto max-w-5xl">
         <h2 className="text-3xl text-foreground sm:text-4xl">{title}</h2>
         <p className="mt-4 max-w-2xl text-base leading-8 text-foreground-subtle">
-          Secao em preparacao. Em seguida vamos construir o conteudo real.
+          Seção em preparação. Em seguida vamos construir o conteúdo real.
         </p>
       </div>
     </section>

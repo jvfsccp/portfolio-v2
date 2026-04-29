@@ -19,11 +19,11 @@ export type EducationEntry = {
 export const educationEntries: readonly EducationEntry[] = [
   {
     id: 'puc-go-ads',
-    degree: 'Analise e Desenvolvimento de Sistemas',
-    institution: 'Pontificia Universidade Catolica de Goias',
+    degree: 'Análise e Desenvolvimento de Sistemas',
+    institution: 'Pontifícia Universidade Católica de Goiás',
     level: 'Graduação',
     summary:
-      'Formacao com foco em desenvolvimento de software, algoritmos, banco de dados, analise de sistemas, desenvolvimento web, mobile e Inteligencia Artificial.',
+      'Formação com foco em desenvolvimento de software, algoritmos, banco de dados, análise de sistemas, desenvolvimento web, mobile e Inteligência Artificial.',
     topics: [
       'Java',
       'HTML',
@@ -40,19 +40,19 @@ export const educationEntries: readonly EducationEntry[] = [
     status: 'Cursando',
     period: '2025 - Presente',
     logoSrc: pucGoLogo,
-    logoAlt: 'Logo da Pontificia Universidade Catolica de Goias',
+    logoAlt: 'Logo da Pontifícia Universidade Católica de Goiás',
   },
   {
     id: 'colegio-expressao',
-    degree: 'Base academica para programacao e comunicacao',
-    institution: 'Colegio Expressao',
-    level: 'Ensino Medio',
+    degree: 'Base acadêmica para programação e comunicação',
+    institution: 'Colégio Expressão',
+    level: 'Ensino Médio',
     summary:
-      'Concluido aos 17 anos, sendo a minha base inicial principalmente em matematica e ingles para a programacao.',
-    topics: ['Ingles', 'Matematica', 'Fundamentos', 'Oratoria'],
-    status: 'Concluido',
+      'Concluído aos 17 anos, sendo a minha base inicial principalmente em matemática e inglês para a programação.',
+    topics: ['Inglês', 'Matemática', 'Fundamentos', 'Oratória'],
+    status: 'Concluído',
     period: '2020 - 2022',
     logoSrc: expressaoLogo,
-    logoAlt: 'Logo do Colegio Expressao',
+    logoAlt: 'Logo do Colégio Expressão',
   },
 ] as const

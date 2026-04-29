@@ -48,15 +48,15 @@ const rawExperiences: ExperienceCompany[] = [
     roles: [
       {
         id: 'estagiario-ti',
-        title: 'Estagiario T.I',
-        location: 'Goiania, Goias, Brasil',
+        title: 'Estagiário T.I',
+        location: 'Goiânia, Goiás, Brasil',
         period: {
           start: '2024-02',
           end: '2024-08',
           display: '02/2024 - 08/2024',
         },
         summary:
-          'Implementei a parametrizacao de sistemas internos para melhorar confiabilidade e fluxo operacional. Tambem desenvolvi automacoes em Python com integracoes via API e Power Query, reduzindo tarefas manuais e aumentando a eficiencia do time.',
+          'Implementei a parametrização de sistemas internos para melhorar confiabilidade e fluxo operacional. Também desenvolvi automações em Python com integrações via API e Power Query, reduzindo tarefas manuais e aumentando a eficiência do time.',
         technologies: [
           'Python',
           'API',
@@ -64,7 +64,7 @@ const rawExperiences: ExperienceCompany[] = [
           'ERP',
           'CRM',
           'Excel',
-          'Integracoes',
+          'Integrações',
         ],
       },
     ],
@@ -77,15 +77,15 @@ const rawExperiences: ExperienceCompany[] = [
     roles: [
       {
         id: 'instrutor-programacao-estagio',
-        title: 'Instrutor de Programacao - Estagio',
-        location: 'Goiania, Goias, Brasil',
+        title: 'Instrutor de Programação - Estágio',
+        location: 'Goiânia, Goiás, Brasil',
         period: {
           start: '2024-08',
           end: '2025-01',
           display: '08/2024 - 01/2025',
         },
         summary:
-          'Ministrei aulas de programacao e robotica para criancas e adolescentes com foco em pratica e criacao. Ensinei desenvolvimento web, Python, Arduino e Microbit adaptando o conteudo ao nivel de cada turma para fortalecer pensamento computacional e resolucao de problemas.',
+          'Ministrei aulas de programação e robótica para crianças e adolescentes com foco em prática e criação. Ensinei desenvolvimento web, Python, Arduino e Microbit, adaptando o conteúdo ao nível de cada turma para fortalecer o pensamento computacional e a resolução de problemas.',
         technologies: [
           'HTML',
           'CSS',
@@ -108,14 +108,14 @@ const rawExperiences: ExperienceCompany[] = [
       {
         id: 'desenvolvedor-jr',
         title: 'Desenvolvedor Jr',
-        location: 'Goiania, Goias, Brasil',
+        location: 'Goiânia, Goiás, Brasil',
         period: {
           start: '2025-02',
           end: '2025-05',
           display: '02/2025 - 05/2025',
         },
         summary:
-          'Desenvolvi interfaces dinamicas com Next.js e Tailwind CSS para entregas modernas e responsivas. Tambem contribui no backend .NET em projetos ASP.NET MVC e assumi a frente do frontend com agilidade, proatividade e autonomia.',
+          'Desenvolvi interfaces dinâmicas com Next.js e Tailwind CSS para entregas modernas e responsivas. Também contribuí no backend .NET em projetos ASP.NET MVC e assumi a frente do frontend com agilidade, proatividade e autonomia.',
         technologies: [
           'HTML',
           'CSS',
@@ -134,14 +134,14 @@ const rawExperiences: ExperienceCompany[] = [
         id: 'desenvolvedor-frontend-pj',
         title: 'Desenvolvedor Frontend',
         contractLabel: 'PJ',
-        location: 'Goiania, Goias, Brasil',
+        location: 'Goiânia, Goiás, Brasil',
         period: {
           start: '2025-11',
           end: '2026-03',
           display: '11/2025 - 03/2026',
         },
         summary:
-          'Atuei diretamente no frontend de dois projetos da empresa, sendo responsavel por implementar, analisar e evoluir as entregas. Trabalhei no produto de resolucao escolar e no site institucional, garantindo consistencia visual e manutencao continua.',
+          'Atuei diretamente no frontend de dois projetos da empresa, sendo responsável por implementar, analisar e evoluir as entregas. Trabalhei no produto de resolução escolar e no site institucional, garantindo consistência visual e manutenção contínua.',
         technologies: ['Next.js', 'Tailwind CSS', 'Zustand'],
       },
     ],
@@ -154,15 +154,15 @@ const rawExperiences: ExperienceCompany[] = [
     roles: [
       {
         id: 'estagiario-desenvolvimento',
-        title: 'Estagiario de Desenvolvimento',
-        location: 'Goiania, Goias, Brasil',
+        title: 'Estagiário de Desenvolvimento',
+        location: 'Goiânia, Goiás, Brasil',
         period: {
           start: '2025-06',
           end: '2026-02',
           display: '06/2025 - 02/2026',
         },
         summary:
-          'Contribui em iniciativas de IA e automacao com Python, OpenAI e Node.js, conectando fluxos internos e atendimento em diferentes frentes. Tambem participei da refatoracao de UX do sistema principal, colaborando com times tecnicos e nao tecnicos e liderando entregas de frontend.',
+          'Contribuí em iniciativas de IA e automação com Python, OpenAI e Node.js, conectando fluxos internos e atendimento em diferentes frentes. Também participei da refatoração de UX do sistema principal, colaborando com times técnicos e não técnicos e liderando entregas de frontend.',
         technologies: [
           'React',
           'TypeScript',
@@ -187,14 +187,14 @@ const rawExperiences: ExperienceCompany[] = [
       {
         id: 'desenvolvedor-jr-i',
         title: 'Desenvolvedor Jr I',
-        location: 'Goiania, Goias, Brasil',
+        location: 'Goiânia, Goiás, Brasil',
         period: {
           start: '2026-03',
           end: 'present',
           display: '03/2026 - Presente',
         },
         summary:
-          'Passei a atuar de forma mais estrategica no desenvolvimento de sistemas web e solucoes com IA, contribuindo de ponta a ponta nas iniciativas. Evoluo produtos internos e APIs para ampliar integracao, eficiencia operacional e geracao de valor para usuarios e clientes.',
+          'Passei a atuar de forma mais estratégica no desenvolvimento de sistemas web e soluções com IA, contribuindo de ponta a ponta nas iniciativas. Evoluo produtos internos e APIs para ampliar integração, eficiência operacional e geração de valor para usuários e clientes.',
         technologies: [
           'React',
           'TypeScript',
@@ -230,14 +230,14 @@ const rawExperiences: ExperienceCompany[] = [
       {
         id: 'desenvolvedor-full-stack-cto',
         title: 'Desenvolvedor Full Stack / CTO',
-        location: 'Goiania, Goias, Brasil',
+        location: 'Goiânia, Goiás, Brasil',
         period: {
           start: '2024-12',
           end: 'present',
           display: '12/2024 - Presente',
         },
         summary:
-          'Co-fundei a AWT para oferecer consultoria de software com foco em solucoes modernas e escalaveis. Atuo na lideranca tecnica e no desenvolvimento full stack, conduzindo desde estrategia e tomada de decisao ate implementacao e evolucao dos sistemas.',
+          'Co-fundei a AWT para oferecer consultoria de software com foco em soluções modernas e escaláveis. Atuo na liderança técnica e no desenvolvimento full stack, conduzindo desde estratégia e tomada de decisão até implementação e evolução dos sistemas.',
         technologies: [
           'Next.js',
           'React',
@@ -249,8 +249,8 @@ const rawExperiences: ExperienceCompany[] = [
           '.NET',
           'Docker',
           'CI/CD',
-          'Estrategia Tecnologica',
-          'Tomada de Decisao',
+          'Estratégia Tecnológica',
+          'Tomada de Decisão',
         ],
       },
     ],

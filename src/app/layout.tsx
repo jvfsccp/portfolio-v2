@@ -16,9 +16,9 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'Joao Victor | Portfólio',
+  title: 'João Victor | Portfólio',
   description:
-    'Portfólio de Joao Victor, desenvolvedor full stack, com projetos, experiência e habilidades.',
+    'Portfólio de João Victor, desenvolvedor full stack, com projetos, experiência e habilidades.',
 }
 
 export default function RootLayout({

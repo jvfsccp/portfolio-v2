@@ -46,7 +46,7 @@ export function ExperienceRoleGroup({ company }: ExperienceRoleGroupProps) {
 
           {company.hasVisibleGap ? (
             <p className="mt-1 text-xs text-muted-foreground">
-              Periodos distintos
+              Períodos distintos
             </p>
           ) : null}
         </div>

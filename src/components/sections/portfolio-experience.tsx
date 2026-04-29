@@ -49,7 +49,7 @@ export function PortfolioExperience() {
             <BriefcaseBusiness aria-hidden="true" className="size-4" />
           </span>
           <h2 className="text-sm font-semibold tracking-[0.22em] text-foreground-subtle uppercase sm:text-[0.92rem]">
-            Experiencia Profissional
+            Experiência Profissional
           </h2>
         </Reveal>
 
