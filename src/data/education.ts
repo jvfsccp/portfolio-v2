@@ -21,7 +21,7 @@ export const educationEntries: readonly EducationEntry[] = [
     id: 'puc-go-ads',
     degree: 'Analise e Desenvolvimento de Sistemas',
     institution: 'Pontificia Universidade Catolica de Goias',
-    level: 'Graduacao',
+    level: 'Graduação',
     summary:
       'Formacao com foco em desenvolvimento de software, algoritmos, banco de dados, analise de sistemas, desenvolvimento web, mobile e Inteligencia Artificial.',
     topics: [

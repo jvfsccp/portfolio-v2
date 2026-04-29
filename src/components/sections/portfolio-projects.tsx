@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 import { FaGithub } from 'react-icons/fa6'
 
+import { Reveal } from '@/components/motion/reveal'
 import { ProjectCard } from '@/components/sections/project-card'
 import { projects } from '@/data/projects'
 
@@ -14,8 +15,8 @@ export function PortfolioProjects() {
       className="scroll-mt-32 border-b border-border/60 px-4 py-20 sm:px-6 sm:py-24"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="mb-12 text-center sm:mb-14">
-          <h1 className="font-heading text-4xl font-semibold tracking-[-0.02em] text-foreground sm:text-5xl">
+        <Reveal className="mb-12 text-center sm:mb-14" y={20}>
+          <h1 className="font-heading text-[2rem] font-semibold tracking-[-0.02em] text-foreground sm:text-5xl">
             Projetos
           </h1>
 
@@ -23,13 +24,16 @@ export function PortfolioProjects() {
             aria-hidden="true"
             className="mx-auto mt-4 block h-px w-14 bg-border-primary/80"
           />
-        </div>
+        </Reveal>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <Reveal
+          className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3"
+          delay={0.06}
+        >
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
-        </div>
+        </Reveal>
 
         <div className="mt-10 flex justify-center sm:mt-12">
           <a

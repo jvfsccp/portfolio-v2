@@ -12,7 +12,7 @@ export function EducationItem({ education }: EducationItemProps) {
   return (
     <div className="relative grid gap-5 lg:grid-cols-[18rem_minmax(0,1fr)] lg:gap-8">
       <div className="lg:pt-8">
-        <p className="font-heading text-4xl font-semibold leading-none tracking-[-0.04em] text-foreground sm:text-5xl lg:text-[3.5rem]">
+        <p className="font-heading text-[1.9rem] font-semibold leading-none tracking-[-0.04em] text-foreground sm:text-5xl lg:text-[3.5rem]">
           {education.period}
         </p>
       </div>
@@ -41,7 +41,7 @@ export function EducationItem({ education }: EducationItemProps) {
                 </p>
               </div>
 
-              <span className="inline-flex shrink-0 rounded-full border border-border-primary/20 bg-secondary/70 px-3 py-1 text-[0.68rem] font-semibold tracking-[0.09em] text-foreground-subtle uppercase">
+              <span className="inline-flex w-fit self-start rounded-full border border-border-primary/20 bg-secondary/70 px-3 py-1 text-[0.68rem] font-semibold tracking-[0.09em] text-foreground-subtle uppercase sm:shrink-0">
                 {education.status}
               </span>
             </div>

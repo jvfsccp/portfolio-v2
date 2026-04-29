@@ -1,3 +1,6 @@
+'use client'
+
+import { motion } from 'framer-motion'
 import { MapPin } from 'lucide-react'
 
 import { heroContent, heroStackItems, heroStats, heroTraits } from '@/data/hero'
@@ -8,7 +11,12 @@ import { HeroRotatingTraits } from './hero-rotating-traits'
 
 export function HeroHighlightCard() {
   return (
-    <aside className="w-full max-w-[24.5rem] rounded-[2rem] border border-border/80 bg-[linear-gradient(180deg,rgba(12,12,12,0.96),rgba(8,8,8,0.98))] px-8 py-10 shadow-[0_28px_60px_rgba(0,0,0,0.36)] backdrop-blur">
+    <motion.aside
+      animate={{ opacity: 1, x: 0, y: 0 }}
+      className="w-full max-w-[24.5rem] rounded-[2rem] border border-border/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.94),rgba(245,244,239,0.98))] px-8 py-10 shadow-[0_28px_60px_rgba(0,0,0,0.16)] backdrop-blur dark:bg-[linear-gradient(180deg,rgba(12,12,12,0.96),rgba(8,8,8,0.98))] dark:shadow-[0_28px_60px_rgba(0,0,0,0.36)]"
+      initial={{ opacity: 0, x: 28, y: 24 }}
+      transition={{ delay: 0.48, duration: 0.96, ease: [0.22, 1, 0.36, 1] }}
+    >
       <div className="flex items-center justify-center gap-5 text-[1.8rem] text-foreground-subtle">
         {heroStackItems.map((item) => {
           const Icon = item.icon
@@ -49,6 +57,6 @@ export function HeroHighlightCard() {
       <div className="mt-10 border-t border-border/70 pt-10">
         <HeroRotatingTraits traits={heroTraits} />
       </div>
-    </aside>
+    </motion.aside>
   )
 }

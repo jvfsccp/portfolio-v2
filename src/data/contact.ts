@@ -1,6 +1,6 @@
 import { type LucideIcon, Mail, MapPin, Phone } from 'lucide-react'
 import type { IconType } from 'react-icons'
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa6'
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa6'
 
 export type ContactCard = {
   icon: LucideIcon
@@ -22,6 +22,7 @@ export type SocialLink = {
 }
 
 export type ContactCta = {
+  ariaLabel: string
   label: string
   href: string
 }
@@ -29,26 +30,26 @@ export type ContactCta = {
 export const contactSectionCopy: ContactSectionCopy = {
   title: 'Vamos conversar',
   intro:
-    'Substitua estes dados pelos seus canais reais quando a secao de contato for finalizada.',
+    'Estou disponivel para conversar sobre projetos, oportunidades e colaboracoes em desenvolvimento de software.',
 }
 
 export const contactCards: readonly ContactCard[] = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'seuemail@exemplo.com',
-    href: 'mailto:seuemail@exemplo.com',
+    value: 'joaovictorfernandescastro@gmail.com',
+    href: 'mailto:joaovictorfernandescastro@gmail.com',
   },
   {
     icon: Phone,
     label: 'Telefone',
-    value: '+55 (00) 00000-0000',
-    href: 'tel:+5500000000000',
+    value: '+55 62 98181-4320',
+    href: 'tel:+5562981814320',
   },
   {
     icon: MapPin,
     label: 'Localizacao',
-    value: 'Sua cidade - UF, Brasil',
+    value: 'Goiania - GO, Brasil',
   },
 ]
 
@@ -56,24 +57,25 @@ export const socialLinks: readonly SocialLink[] = [
   {
     icon: FaGithub,
     platform: 'GitHub',
-    ariaLabel: 'Abrir perfil placeholder do GitHub',
-    href: 'https://github.com/seu-usuario',
+    ariaLabel: 'Abrir perfil do GitHub',
+    href: 'https://github.com/jvfsccp',
   },
   {
     icon: FaLinkedin,
     platform: 'LinkedIn',
-    ariaLabel: 'Abrir perfil placeholder do LinkedIn',
-    href: 'https://www.linkedin.com/in/seu-usuario',
+    ariaLabel: 'Abrir perfil do LinkedIn',
+    href: 'https://www.linkedin.com/in/joao-victor-fernandes-castro/',
   },
   {
-    icon: FaInstagram,
-    platform: 'Instagram',
-    ariaLabel: 'Abrir perfil placeholder do Instagram',
-    href: 'https://www.instagram.com/seu-usuario',
+    icon: FaWhatsapp,
+    platform: 'WhatsApp',
+    ariaLabel: 'Abrir conversa no WhatsApp',
+    href: 'https://w.app/emrhso',
   },
 ]
 
 export const contactCta: ContactCta = {
-  label: 'Enviar mensagem',
-  href: 'mailto:seuemail@exemplo.com',
+  ariaLabel: 'Abrir conversa no WhatsApp',
+  label: 'Entrar em contato no WhatsApp',
+  href: 'https://w.app/emrhso',
 }

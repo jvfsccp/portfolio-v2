@@ -1,3 +1,4 @@
+import { BottomFooter } from '@/components/layout/bottom-footer'
 import { SiteFooter } from '@/components/layout/site-footer'
 import { SiteHeader } from '@/components/layout/site-header'
 import { PortfolioEducation } from '@/components/sections/portfolio-education'
@@ -65,6 +66,7 @@ export default function HomePage() {
           ))}
       </main>
       <SiteFooter />
+      <BottomFooter />
     </>
   )
 }

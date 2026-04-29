@@ -1,5 +1,5 @@
+import { Reveal } from '@/components/motion/reveal'
 import { skillCategories } from '@/data/skills'
-
 import { SkillGroupCard } from './skill-group-card'
 
 const SKILLS_SECTION_ID = 'habilidades'
@@ -11,8 +11,8 @@ export function PortfolioSkills() {
       className="scroll-mt-32 border-b border-border/60 px-4 py-20 sm:px-6 sm:py-24"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="mb-12 text-center sm:mb-14">
-          <h1 className="font-heading text-4xl font-semibold tracking-[-0.02em] text-foreground sm:text-5xl">
+        <Reveal className="mb-12 text-center sm:mb-14" y={20}>
+          <h1 className="font-heading text-[2rem] font-semibold tracking-[-0.02em] text-foreground sm:text-5xl">
             Habilidades
           </h1>
 
@@ -21,12 +21,12 @@ export function PortfolioSkills() {
             className="mx-auto mt-4 block h-px w-14 bg-border-primary/80"
           />
 
-          <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-foreground-subtle sm:text-lg">
+          <p className="mx-auto mt-6 max-w-3xl text-[0.96rem] leading-7 text-foreground-subtle sm:text-lg sm:leading-8">
             Stack organizada por frentes de trabalho para mostrar, de forma
             direta, as tecnologias que utilizo para construir produtos
             completos.
           </p>
-        </div>
+        </Reveal>
 
         <div className="grid gap-6 lg:grid-cols-2">
           {skillCategories.map((category, index) => (

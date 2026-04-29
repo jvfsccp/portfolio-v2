@@ -18,7 +18,7 @@ export function HeroAnimatedStats({ stats }: HeroAnimatedStatsProps) {
 
     const intervalId = window.setInterval(() => {
       setActiveIndex((currentIndex) => (currentIndex + 1) % stats.length)
-    }, 1800)
+    }, 2800)
 
     return () => {
       window.clearInterval(intervalId)
@@ -36,7 +36,7 @@ export function HeroAnimatedStats({ stats }: HeroAnimatedStatsProps) {
           <div
             key={item.label}
             className={[
-              'rounded-2xl border border-transparent px-2 py-3 transition-all duration-500',
+              'rounded-2xl border border-transparent px-2 py-3 transition-all duration-800',
               isActive
                 ? 'border-border/80 bg-secondary/40 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]'
                 : 'opacity-75',

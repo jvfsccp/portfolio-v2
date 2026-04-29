@@ -40,7 +40,7 @@ export const heroContent: HeroContent = {
   description:
     'Transformando ideias em soluções criativas e escaláveis. Especialista em criar sistemas e aplicações com React, Next.js, Node.js e Fastify. Focado em performance, interfaces modernas e integração com Inteligência Artificial.',
   age: '21',
-  location: 'Goiania, GO - Brasil',
+  location: 'Goiania - GO, Brasil',
 }
 
 export const heroPrimaryAction: HeroAction = {
@@ -55,20 +55,20 @@ export const heroSecondaryAction: HeroAction = {
 
 export const heroSocialLinks: readonly HeroSocialLink[] = [
   {
-    ariaLabel: 'Abrir GitHub placeholder',
-    href: 'https://github.com/seu-usuario',
+    ariaLabel: 'Abrir GitHub de Joao Victor',
+    href: 'https://github.com/jvfsccp',
     icon: FaGithub,
     label: 'GitHub',
   },
   {
-    ariaLabel: 'Abrir LinkedIn placeholder',
-    href: 'https://linkedin.com/in/seu-usuario',
+    ariaLabel: 'Abrir LinkedIn de Joao Victor',
+    href: 'https://www.linkedin.com/in/joao-victor-fernandes-castro/',
     icon: FaLinkedinIn,
     label: 'LinkedIn',
   },
   {
-    ariaLabel: 'Abrir WhatsApp placeholder',
-    href: 'https://wa.me/5500000000000',
+    ariaLabel: 'Abrir WhatsApp de Joao Victor',
+    href: 'https://w.app/emrhso',
     icon: FaWhatsapp,
     label: 'WhatsApp',
   },

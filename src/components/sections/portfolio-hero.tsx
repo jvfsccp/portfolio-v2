@@ -1,3 +1,6 @@
+'use client'
+
+import { motion } from 'framer-motion'
 import { ArrowRight, Download } from 'lucide-react'
 
 import { buttonVariants } from '@/components/ui/button'
@@ -33,23 +36,64 @@ export function PortfolioHero() {
 
         <div className="relative grid items-start gap-12 lg:grid-cols-[minmax(0,1.2fr)_24.5rem] lg:gap-16">
           <div className="max-w-4xl">
-            <p className="pl-1 text-sm font-semibold tracking-[0.28em] text-foreground-subtle sm:pl-1.5 sm:text-base">
+            <motion.p
+              animate={{ opacity: 1, y: 0 }}
+              className="pl-1 text-sm font-semibold tracking-[0.28em] text-foreground-subtle sm:pl-1.5 sm:text-base"
+              initial={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.78, ease: [0.22, 1, 0.36, 1] }}
+            >
               {heroContent.greeting}
-            </p>
+            </motion.p>
 
-            <h1 className="mt-6 font-heading text-6xl font-semibold leading-[0.88] tracking-[-0.04em] text-foreground sm:text-7xl lg:text-[7.15rem]">
+            <motion.h1
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-6 font-heading text-[3rem] font-semibold leading-[0.9] tracking-[-0.04em] text-foreground sm:text-7xl lg:text-[7.15rem]"
+              initial={{ opacity: 0, y: 28 }}
+              transition={{
+                delay: 0.12,
+                duration: 0.92,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+            >
               {renderHeroName(heroContent.name)}
-            </h1>
+            </motion.h1>
 
-            <p className="mt-10 max-w-2xl text-3xl font-heading font-semibold leading-[1.05] text-foreground sm:text-4xl">
+            <motion.p
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-10 max-w-2xl text-[1.6rem] font-heading font-semibold leading-[1.08] text-foreground sm:text-4xl"
+              initial={{ opacity: 0, y: 20 }}
+              transition={{
+                delay: 0.24,
+                duration: 0.8,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+            >
               {heroContent.role}
-            </p>
+            </motion.p>
 
-            <p className="mt-10 max-w-3xl text-lg leading-9 text-foreground-subtle sm:text-[1.38rem]">
+            <motion.p
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-8 max-w-3xl text-base leading-8 text-foreground-subtle sm:mt-10 sm:text-[1.38rem] sm:leading-9"
+              initial={{ opacity: 0, y: 22 }}
+              transition={{
+                delay: 0.34,
+                duration: 0.86,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+            >
               {heroContent.description}
-            </p>
+            </motion.p>
 
-            <div className="mt-12 flex flex-wrap items-center gap-4">
+            <motion.div
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-12 flex flex-wrap items-center gap-4"
+              initial={{ opacity: 0, y: 22 }}
+              transition={{
+                delay: 0.46,
+                duration: 0.84,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+            >
               {heroSocialLinks.map((social) => {
                 const Icon = social.icon
 
@@ -59,14 +103,25 @@ export function PortfolioHero() {
                     aria-label={social.ariaLabel}
                     className="flex size-14 items-center justify-center rounded-full border border-border bg-surface/75 text-foreground-subtle shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition-colors duration-200 hover:border-primary/20 hover:bg-secondary hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/70"
                     href={social.href}
+                    rel="noreferrer"
+                    target="_blank"
                   >
                     <Icon aria-hidden="true" className="size-5" />
                   </a>
                 )
               })}
-            </div>
+            </motion.div>
 
-            <div className="mt-14 flex flex-wrap items-center gap-4">
+            <motion.div
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-14 flex flex-wrap items-center gap-4"
+              initial={{ opacity: 0, y: 24 }}
+              transition={{
+                delay: 0.58,
+                duration: 0.88,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+            >
               <a
                 className={cn(
                   buttonVariants({ size: 'lg' }),
@@ -90,7 +145,7 @@ export function PortfolioHero() {
                 <Download aria-hidden="true" className="size-4" />
                 {heroSecondaryAction.label}
               </a>
-            </div>
+            </motion.div>
           </div>
 
           <div className="lg:pt-10">
