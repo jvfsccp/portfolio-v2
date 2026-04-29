@@ -1,14 +1,16 @@
 import { SiteFooter } from '@/components/layout/site-footer'
 import { SiteHeader } from '@/components/layout/site-header'
+import { PortfolioEducation } from '@/components/sections/portfolio-education'
 import { PortfolioExperience } from '@/components/sections/portfolio-experience'
 import { PortfolioHero } from '@/components/sections/portfolio-hero'
 import { PortfolioProjects } from '@/components/sections/portfolio-projects'
+import { PortfolioSkills } from '@/components/sections/portfolio-skills'
 
 const placeholderSections = [
   { id: 'experiencia', title: 'Experiencia' },
   { id: 'projetos', title: 'Projetos' },
   { id: 'habilidades', title: 'Habilidades' },
-  { id: 'educacao', title: 'Educacao' },
+  { id: 'educacao', title: 'Educação' },
 ] as const
 
 type PlaceholderSectionProps = {
@@ -43,10 +45,16 @@ export default function HomePage() {
 
         <PortfolioProjects />
 
+        <PortfolioSkills />
+
+        <PortfolioEducation />
+
         {placeholderSections
           .filter(
             (section) =>
-              section.id !== 'experiencia' && section.id !== 'projetos',
+              !['experiencia', 'projetos', 'habilidades', 'educacao'].includes(
+                section.id,
+              ),
           )
           .map((section) => (
             <PlaceholderSection

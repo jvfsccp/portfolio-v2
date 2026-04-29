@@ -3,7 +3,7 @@
 ## Project Context
 
 - Project: personal portfolio built with Next.js App Router, React 19, TypeScript, and Tailwind CSS v4.
-- Current phase: foundation/setup only. Creative sections like `header`, `hero`, projects, skills, and footer are not implemented yet.
+- Current phase: main portfolio sections are implemented. Remaining work is final polish, animations, and real destination links.
 - Inspiration assets live in `images-inspirations/`.
 - Color naming rules are documented in `cores.md`.
 
@@ -27,6 +27,12 @@
 - Added shared `cn` helper in `src/lib/utils.ts`.
 - Installed the icon libraries and supporting UI dependencies.
 - Adjusted `biome.json` so project linting respects `.gitignore` and does not flag Tailwind/shadcn CSS at-rules as unknown.
+- Implemented the real homepage flow with:
+  - hero section
+  - experience section
+  - projects section
+  - skills section with grouped technology badges and brand colors
+  - education section with institution logos and timeline layout
 
 ## Current Design Tokens
 
@@ -79,7 +85,7 @@
 - Use `lucide-react` for general icons.
 - Use `react-icons` for social media icons.
 - Preserve the semantic token naming from `cores.md` when building new UI.
-- Keep visual work aligned with the current monochromatic dark foundation unless a later design step explicitly changes it.
+- Keep visual work aligned with the current dark foundation, while allowing restrained brand colors where a section already establishes them, such as skills badges.
 
 ## Superpowers Usage Policy
 
@@ -112,11 +118,23 @@
   - `tailwind-merge`
   - `tw-animate-css`
 
-## Files Relevant To The Setup
+## Files Relevant To The Current Build
 
 - `src/app/layout.tsx`
 - `src/app/globals.css`
 - `src/app/page.tsx`
+- `src/components/layout/site-header.tsx`
+- `src/components/layout/site-footer.tsx`
+- `src/components/sections/portfolio-hero.tsx`
+- `src/components/sections/portfolio-experience.tsx`
+- `src/components/sections/portfolio-projects.tsx`
+- `src/components/sections/portfolio-skills.tsx`
+- `src/components/sections/portfolio-education.tsx`
+- `src/data/hero.ts`
+- `src/data/experiences.ts`
+- `src/data/projects.ts`
+- `src/data/skills.tsx`
+- `src/data/education.ts`
 - `src/lib/utils.ts`
 - `components.json`
 - `cores.md`
@@ -137,5 +155,5 @@
 
 ## Important Scope Note
 
-- At this point the project only has the foundation layer and a placeholder homepage.
-- The next implementation phase should focus on the creative structure and real sections of the portfolio.
+- The core portfolio sections are already live on the homepage.
+- The next implementation phase should focus on motion polish, real external/internal links, and final visual refinement.

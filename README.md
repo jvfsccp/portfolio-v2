@@ -4,17 +4,22 @@ Personal portfolio project built with Next.js App Router, React 19, TypeScript, 
 
 ## Current Status
 
-This repository is currently in the foundation phase.
+This repository is now in the portfolio sections phase.
 
 Implemented so far:
 
 - Typography and base visual foundation
 - Semantic design tokens in `src/app/globals.css`
 - Root metadata and locale (`pt-BR`) in `src/app/layout.tsx`
-- Initial page structure with reusable sections and layout components
+- Reusable layout components for header and footer
+- Hero section
+- Experience section
+- Projects section
+- Skills section with brand-colored technology badges
+- Education section with institution logos and timeline layout
 - `shadcn/ui` initialization with Base UI setup
 
-The next phase focuses on building the full creative portfolio sections.
+The next phase focuses on final polish, animations, and real project links.
 
 ## Tech Stack
 
@@ -64,3 +69,11 @@ src/
   data/         # Content/data files for portfolio sections
   lib/          # Shared utilities
 ```
+
+## Implemented Sections
+
+- `Inicio`: intro, CTA, and social links
+- `Experiencia`: professional timeline
+- `Projetos`: highlighted project cards
+- `Habilidades`: grouped tech stack by category
+- `Educacao`: academic background timeline
